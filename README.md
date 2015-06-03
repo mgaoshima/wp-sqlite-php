@@ -3,7 +3,7 @@
 ## 初期設定
 
 - [wp-cli](http://wp-cli.org/#install) のインストール
-- [wp-cli server-command](https://github.com/wp-cli/wp-cli/wiki/Community-Packages) のインストール
+- [wp-cli server-command](https://github.com/wp-cli/wp-cli/wiki/Community-Packages) のインストール（wp-cliの次のバージョンでは最初から入る予定）
 
 
 ## WPサイトのデータのクローン、サーバ起動
