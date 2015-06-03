@@ -1,5 +1,8 @@
 # wp-sqlite-php
 
+wp-cliのserver-command（中身はPHPのビルトインウェブサーバ）とSQLiteでサクッとWordPressを動かすデモ
+
+
 ## 初期設定
 
 - [wp-cli](http://wp-cli.org/#install) のインストール
