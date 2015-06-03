@@ -91,7 +91,7 @@ class Dynamic_Hostname {
 			$uri = parse_url($this->home_url);
 		}
 
-		return $uri['host'];
+		return $uri['host'].':'.$uri['port'];
 	}
 
 }
