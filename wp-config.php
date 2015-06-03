@@ -38,7 +38,9 @@ define('DB_CHARSET', 'utf8');
 /** データベースの照合順序 (ほとんどの場合変更する必要はありません) */
 define('DB_COLLATE', '');
 
-define('WP_HOME', 'http://localhost:8080');
+/* dynamic-hostname */
+define('WP_HOME', 'http://localhost:8080'); // 実際にDBに登録されるhostnameを入れる
+
 
 /**#@+
  * 認証用ユニークキー
