@@ -11,7 +11,17 @@
 ```
 $ git clone git@github.com:mgaoshima/wp-sqlite-php.git
 $ cd wp-sqlite-php
-$ wp server --host=wordpress.local --port=80
+$ wp server
+PHP 5.5.20 Development Server started at Wed Jun  3 18:49:51 2015
+Listening on http://localhost:8080
+Document root is /Users/nozomi/Desktop/hoge
+Press Ctrl-C to quit.
+```
+
+または、`/etc/hosts/`に`127.0.0.1  wordpress.local`を追記し、
+
+```
+$ sudo wp server --allow-root --host=wordpress.local --port=80
 ```
 
 
@@ -19,6 +29,7 @@ $ wp server --host=wordpress.local --port=80
 
 - SQLite3を[SQLite Integration](https://wordpress.org/plugins/sqlite-integration/)プラグイン経由で使っています。
 - データベースは `wp-content/database/.ht.sqlite` という1つのバイナリファイルにまとまります。
+- `https://<hostname>/wp-content/database/phpliteadmin.php`にアクセスするとGUIでDBをいじれます（PW:admin）
 - なのでDBごとgitに登録してしまえばいいと思います←
 - SQLiteでは使えないプラグインも結構あります（DB操作系、キャッシュ系など）
 - `$ sqlite3 wp-content/database/.ht.sqlite` でDBに入れます（[SQLite入門](http://www.dbonline.jp/sqlite/)）
