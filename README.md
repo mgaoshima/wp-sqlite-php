@@ -2,6 +2,8 @@
 
 wp-cliのserver-command（中身はPHPのビルトインウェブサーバ）とSQLiteでサクッとWordPressを動かすデモ
 
+これを使えばVMを起動したりポートフォワーディングを気にしたりすることなくWordPressの環境を共有できます。
+
 
 ## 初期設定
 
